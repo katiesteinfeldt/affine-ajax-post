@@ -6,11 +6,11 @@ function onReady() {
         url: '/wolves'
     }).then(function (response) {
         for (let i = 0; i < response.length; i++) {
-            $('#wolvesList').append(`
-                <ul>
-                    <li>${response[i].commonName}</li>
-                    <li>${response[i].scientificName}</li>
-                </ul>
+            $('#wolvesTable').append(`
+             <tr>
+                <td>${response[i].commonName}</td>
+                <td>${response[i].scientificName}</td>
+            </tr>
             `);
         }
     });

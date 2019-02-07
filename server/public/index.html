@@ -4,9 +4,39 @@
     <title>Wolves</title>
     <script src="jQuery.js"></script>
     <script src="client.js"></script>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+    
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
     <h1>Wolves</h1>
-    <div id="wolvesList"></div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Common Name</th>
+                    <th>Scientific Name</th>
+                </tr>
+            </thead>
+            <tbody id="wolvesTable">
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
